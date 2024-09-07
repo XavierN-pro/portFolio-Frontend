@@ -1,0 +1,33 @@
+{
+    "language" :{
+        "tooltip" : "Language",
+        "fr": "Français",
+        "en": "English" 
+    },
+    "nav" :{
+        "about" : "About",
+        "contact" : "Contact",
+        "projects" : "Projects",
+        "proj1" : "Project One",
+        "proj2" : "Project Two",
+        "skills": "Skills"
+    },
+    "off":"off",
+    "on" : "on",
+    "themeOff" : "Dark mode off",
+    "themeOn" : "Dark mode on",
+    "React" : "This is React",
+    "Home": "Home",
+    "Contact": "Contact Us",
+    "About": "About Us",
+    "username": {
+        "label": "username",
+        "placeholder": "placeholder..."
+    },
+    "password": {
+        "label": "password",
+        "placeholder": "password placeholder..."
+    },
+    "location": "Enter the location",
+    "Address": "Enter the address"
+}

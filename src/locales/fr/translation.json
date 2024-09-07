@@ -1,0 +1,33 @@
+{
+    "language" :{
+        "tooltip" : "Langue",
+        "fr": "Français",
+        "en": "English"
+    },
+    "nav" :{
+        "about" : "About",
+        "contact" : "Contact",
+        "projects" : "Projects",
+        "proj1" : "Project Un",
+        "proj2" : "Project Deux",
+        "skills": "Skills"
+    },
+    "off":"Désactiver",
+    "on" : "Activer",
+    "themeOff" : "Désactiver le mode sombre",
+    "themeOn" : "Activer le mode sombre",
+    "React" : "Ceci est React",
+    "Home": "Accueil",
+    "Contact": "Me contacter",
+    "About": "A propos de moi",
+    "username": {
+        "label": "nom d'utilisateur",
+        "placeholder": "placeholder..."
+    },
+    "password": {
+        "label": "mot de passe",
+        "placeholder": "mot de passe placeholder..."
+    },
+    "location": "Entrez la localisation",
+    "Address": "Entrez l'adresse"
+}
