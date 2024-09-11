@@ -5,12 +5,13 @@
         "en": "English"
     },
     "nav" :{
-        "about" : "About",
+        "about" : "A propos",
         "contact" : "Contact",
-        "projects" : "Projects",
+        "projects" : "Travaux",
         "proj1" : "Project Un",
         "proj2" : "Project Deux",
-        "skills": "Skills"
+        "skills": "Compétances",
+        "private": "Privé"
     },
     "off":"Désactiver",
     "on" : "Activer",

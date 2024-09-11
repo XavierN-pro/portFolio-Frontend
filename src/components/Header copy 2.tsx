@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react";
+import { Bars4Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
-import { AnimatePresence, motion, useCycle } from 'framer-motion';
-import { LanguageSelector, ToggleTheme, MenuContent, MenuToggle} from '@/components/';
+import { AnimatePresence, motion } from 'framer-motion';
+import { LanguageSelector, ToggleTheme, MenuContent } from '@/components/';
 import { classNames } from '@/utils';
 
 interface NavigationItem {
@@ -15,13 +16,13 @@ interface NavigationItem {
 }
 
 export const Header = () : JSX.Element => {  
-  const [isMenuOpen, setIsMenuOpen] = useCycle(false, true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useTranslation();
 
   useEffect(() => {
     const handleResize = () => {
       // Ferme le menu lorsque l'utilisateur redimensionne la fenêtre
-      setIsMenuOpen();
+      setIsMenuOpen(false);
     };
 
     // Écoute les événements de redimensionnement de la fenêtre
@@ -71,7 +72,7 @@ export const Header = () : JSX.Element => {
         className="flex flex-col lg:flex-row lg:space-x-4 items-start"
         >
           {navigation.map((item: NavigationItem) => (
-              <MenuContent key={item.name} item={item} isMenuOpen={isMenuOpen}/>
+              <MenuContent item={item} isMenuOpen={isMenuOpen}/>
           ))}
         </div>
         {/* Theme and Language selectors visible on small screens */}
@@ -83,7 +84,16 @@ export const Header = () : JSX.Element => {
         )}
       </nav>
       {/* Mobile menu button */}
-      <MenuToggle toggle={() => setIsMenuOpen()} isOpen={isMenuOpen} />
+      <button
+        className="lg:hidden text-white ml-auto"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        {isMenuOpen ?
+          <XMarkIcon className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"/>
+          :          
+          <Bars4Icon className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"/>
+        }
+      </button>
       {/* Theme and Language selectors visible on large screens */}
       <div className="hidden lg:flex items-center space-x-4">
         <ToggleTheme />

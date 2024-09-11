@@ -34,10 +34,10 @@ export const Tooltip : React.FC<TooltipProps> = ({
       className={classNames(
         'absolute w-max max-w-xs px-2 py-1 text-xs rounded-lg overflow-hidden text-ellipsis hidden group-hover:block',
         className,
-        position === 'top' ? 'bottom-full mb-2' : '',
-        position === 'bottom' ? 'top-full mt-2' : '',
-        position === 'left' ? 'right-full mr-2' : '',
-        position === 'right' ? 'left-full ml-2' : ''
+        position === 'top' ? 'bottom-full mb-1.5' : '',
+        position === 'bottom' ? 'top-full mt-1.5' : '',
+        position === 'left' ? 'right-full mr-1.5' : '',
+        position === 'right' ? 'left-full ml-1.5' : ''
       )}
       style={{ left: '50%', transform: 'translateX(-50%)' }}
     >

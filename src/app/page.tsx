@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import { Header } from "@/components/";
+import { useState, useEffect } from "react";
 
-export default function Home() {
+export default function Home() { 
+
   return (
     <>
     <Header/>

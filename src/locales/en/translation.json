@@ -10,7 +10,8 @@
         "projects" : "Projects",
         "proj1" : "Project One",
         "proj2" : "Project Two",
-        "skills": "Skills"
+        "skills": "Skills",
+        "private" : "Private"
     },
     "off":"off",
     "on" : "on",
